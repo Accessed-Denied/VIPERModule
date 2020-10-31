@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		227A1509254D5FFD009CF49E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1508254D5FFD009CF49E /* AppDelegate.swift */; };
-		227A150B254D5FFD009CF49E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A150A254D5FFD009CF49E /* SceneDelegate.swift */; };
-		227A150D254D5FFD009CF49E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A150C254D5FFD009CF49E /* ViewController.swift */; };
+		227A150D254D5FFD009CF49E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A150C254D5FFD009CF49E /* HomeViewController.swift */; };
 		227A1510254D5FFD009CF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227A150E254D5FFD009CF49E /* Main.storyboard */; };
 		227A1512254D6003009CF49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227A1511254D6003009CF49E /* Assets.xcassets */; };
 		227A1515254D6003009CF49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 227A1513254D6003009CF49E /* LaunchScreen.storyboard */; };
+		227A1521254D6102009CF49E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1520254D6102009CF49E /* HomeView.swift */; };
+		227A1526254D6187009CF49E /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1525254D6187009CF49E /* HomePresenter.swift */; };
+		227A1529254D61E8009CF49E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1528254D61E8009CF49E /* HomeRouter.swift */; };
+		227A152C254D6223009CF49E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A152B254D6223009CF49E /* HomeInteractor.swift */; };
+		227A1530254D6285009CF49E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A152F254D6285009CF49E /* HomeModel.swift */; };
+		227A1537254D6362009CF49E /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1536254D6362009CF49E /* HomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		227A1505254D5FFD009CF49E /* VIPERModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227A1508254D5FFD009CF49E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		227A150A254D5FFD009CF49E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		227A150C254D5FFD009CF49E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		227A150C254D5FFD009CF49E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		227A150F254D5FFD009CF49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		227A1511254D6003009CF49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		227A1514254D6003009CF49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		227A1516254D6003009CF49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		227A1520254D6102009CF49E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		227A1525254D6187009CF49E /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		227A1528254D61E8009CF49E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		227A152B254D6223009CF49E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		227A152F254D6285009CF49E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		227A1536254D6362009CF49E /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		227A1507254D5FFD009CF49E /* VIPERModule */ = {
 			isa = PBXGroup;
 			children = (
+				227A151D254D6026009CF49E /* HomeModule */,
 				227A1508254D5FFD009CF49E /* AppDelegate.swift */,
-				227A150A254D5FFD009CF49E /* SceneDelegate.swift */,
-				227A150C254D5FFD009CF49E /* ViewController.swift */,
 				227A150E254D5FFD009CF49E /* Main.storyboard */,
 				227A1511254D6003009CF49E /* Assets.xcassets */,
 				227A1513254D6003009CF49E /* LaunchScreen.storyboard */,
 				227A1516254D6003009CF49E /* Info.plist */,
 			);
 			path = VIPERModule;
+			sourceTree = "<group>";
+		};
+		227A151D254D6026009CF49E /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				227A152E254D6259009CF49E /* HomeEntity */,
+				227A150C254D5FFD009CF49E /* HomeViewController.swift */,
+				227A1520254D6102009CF49E /* HomeView.swift */,
+				227A1525254D6187009CF49E /* HomePresenter.swift */,
+				227A1528254D61E8009CF49E /* HomeRouter.swift */,
+				227A152B254D6223009CF49E /* HomeInteractor.swift */,
+				227A1536254D6362009CF49E /* HomeModuleBuilder.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		227A152E254D6259009CF49E /* HomeEntity */ = {
+			isa = PBXGroup;
+			children = (
+				227A152F254D6285009CF49E /* HomeModel.swift */,
+			);
+			path = HomeEntity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227A150D254D5FFD009CF49E /* ViewController.swift in Sources */,
+				227A150D254D5FFD009CF49E /* HomeViewController.swift in Sources */,
+				227A1529254D61E8009CF49E /* HomeRouter.swift in Sources */,
+				227A1521254D6102009CF49E /* HomeView.swift in Sources */,
+				227A1537254D6362009CF49E /* HomeModuleBuilder.swift in Sources */,
 				227A1509254D5FFD009CF49E /* AppDelegate.swift in Sources */,
-				227A150B254D5FFD009CF49E /* SceneDelegate.swift in Sources */,
+				227A1530254D6285009CF49E /* HomeModel.swift in Sources */,
+				227A1526254D6187009CF49E /* HomePresenter.swift in Sources */,
+				227A152C254D6223009CF49E /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = VIPERModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = VIPERModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
