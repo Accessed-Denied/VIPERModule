@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeModuleBuilder{
+struct HomeModuleBuilder{
     
    static func build() -> UIViewController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

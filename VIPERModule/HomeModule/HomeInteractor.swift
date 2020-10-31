@@ -10,7 +10,7 @@ protocol HomeUseCase {
      func getHomeTitle() -> HomeModel
 }
 
-class HomeInteractor{
+struct HomeInteractor{
     
 }
 

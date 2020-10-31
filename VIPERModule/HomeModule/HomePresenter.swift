@@ -10,7 +10,7 @@ protocol HomePresentation {
     func viewDidLoad() -> Void
 }
 
-class HomePresenter{
+struct HomePresenter{
     weak var view: HomeView?
     var interactor: HomeUseCase
     var router: HomeRounting
@@ -25,8 +25,7 @@ class HomePresenter{
 extension HomePresenter: HomePresentation{
     func viewDidLoad() {
         let homeModel = self.interactor.getHomeTitle()
-        DispatchQueue.main.async { [weak self] in
-            guard let `self` = self else {return}
+        DispatchQueue.main.async {
             self.view?.updateHomeTitle(title: homeModel.title)
         }
         

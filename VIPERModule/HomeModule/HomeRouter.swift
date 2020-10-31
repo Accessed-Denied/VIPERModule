@@ -10,7 +10,7 @@ protocol HomeRounting {
     
 }
 
-class HomeRouter{
+struct HomeRouter{
     var viewController: UIViewController
     init(view: UIViewController){
         self.viewController = view
