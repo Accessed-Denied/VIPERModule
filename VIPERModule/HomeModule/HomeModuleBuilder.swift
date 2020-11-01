@@ -12,7 +12,7 @@ struct HomeModuleBuilder{
    static func build() -> UIViewController{
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(service: StubService.shared)
         let rounter = HomeRouter(view: view)
         let presenter = HomePresenter(view: view, interactor: interactor, router: rounter)
         view.presenter = presenter

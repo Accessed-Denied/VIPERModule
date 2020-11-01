@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeView {
-    func updateHomeTitle(title: String) {
-        homeTitleLbl.text = title
+    func fetchProducts(result: [HomeModel]) {
+        print(result)
     }
 }

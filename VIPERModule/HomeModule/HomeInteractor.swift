@@ -7,15 +7,20 @@
 
 
 protocol HomeUseCase {
-     func getHomeTitle() -> HomeModel
+    func getProduct(completion:ProductClosure) -> (Void)
 }
 
-struct HomeInteractor{
-    
+struct HomeInteractor: HomeUseCase{
+    var service: StubService
+    init(service: StubService){
+        self.service = service
+    }
 }
 
-extension HomeInteractor: HomeUseCase{
-    func getHomeTitle() -> HomeModel {
-        return HomeModel(title: "Building VIPER Module")
+extension HomeInteractor{
+    func getProduct(completion: ProductClosure){
+        service.fetchProducts { products in
+            completion(products)
+        }
     }
 }

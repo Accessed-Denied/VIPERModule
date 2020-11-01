@@ -18,6 +18,7 @@
 		227A152C254D6223009CF49E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A152B254D6223009CF49E /* HomeInteractor.swift */; };
 		227A1530254D6285009CF49E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A152F254D6285009CF49E /* HomeModel.swift */; };
 		227A1537254D6362009CF49E /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A1536254D6362009CF49E /* HomeModuleBuilder.swift */; };
+		227A153C254F0989009CF49E /* StubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A153B254F0989009CF49E /* StubService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		227A152B254D6223009CF49E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		227A152F254D6285009CF49E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		227A1536254D6362009CF49E /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
+		227A153B254F0989009CF49E /* StubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		227A1507254D5FFD009CF49E /* VIPERModule */ = {
 			isa = PBXGroup;
 			children = (
+				227A153A254F06A0009CF49E /* ServiceAPI */,
 				227A151D254D6026009CF49E /* HomeModule */,
 				227A1508254D5FFD009CF49E /* AppDelegate.swift */,
 				227A150E254D5FFD009CF49E /* Main.storyboard */,
@@ -96,6 +99,14 @@
 				227A152F254D6285009CF49E /* HomeModel.swift */,
 			);
 			path = HomeEntity;
+			sourceTree = "<group>";
+		};
+		227A153A254F06A0009CF49E /* ServiceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				227A153B254F0989009CF49E /* StubService.swift */,
+			);
+			path = ServiceAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 			files = (
 				227A150D254D5FFD009CF49E /* HomeViewController.swift in Sources */,
 				227A1529254D61E8009CF49E /* HomeRouter.swift in Sources */,
+				227A153C254F0989009CF49E /* StubService.swift in Sources */,
 				227A1521254D6102009CF49E /* HomeView.swift in Sources */,
 				227A1537254D6362009CF49E /* HomeModuleBuilder.swift in Sources */,
 				227A1509254D5FFD009CF49E /* AppDelegate.swift in Sources */,

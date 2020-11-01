@@ -11,7 +11,7 @@ protocol HomePresentation {
 }
 
 struct HomePresenter{
-    weak var view: HomeView?
+    var view: HomeView
     var interactor: HomeUseCase
     var router: HomeRounting
     init(view:HomeView,interactor: HomeUseCase,router:HomeRounting){
@@ -24,10 +24,12 @@ struct HomePresenter{
 
 extension HomePresenter: HomePresentation{
     func viewDidLoad() {
-        let homeModel = self.interactor.getHomeTitle()
-        DispatchQueue.main.async {
-            self.view?.updateHomeTitle(title: homeModel.title)
+       self.interactor.getProduct { products in
+            DispatchQueue.main.async {
+                view.fetchProducts(result: products)
+            }
         }
+        
         
     }
 }

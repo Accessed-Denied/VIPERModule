@@ -5,6 +5,7 @@
 //  Created by Rohit Saini on 31/10/20.
 //
 
-protocol HomeView:class {
-    func updateHomeTitle(title: String) -> Void
+protocol HomeView {
+    //We can also use ViewModel here
+    func fetchProducts(result: [HomeModel])
 }
